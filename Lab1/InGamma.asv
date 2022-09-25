@@ -1,0 +1,7 @@
+function a = InGamma(x, N)
+a=sqrt(pi);
+s=sqrt(x);
+for k=0:1:N
+    a=a-s/(k+1);
+    s=-x*s/(k+1);
+end
